@@ -8,3 +8,11 @@
         文件操作的能力
         http服务的能力
 
+2、Node.JS中核心模块
+   1) 获取机器信息os
+      os.cpus();     获取机器的CPU信息
+      os.totalmem(); 获取机器的内存
+   2) 操作路径path
+   3) 文件读写fs
+   4) HTTP服务http
+
