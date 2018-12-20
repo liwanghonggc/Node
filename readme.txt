@@ -22,3 +22,6 @@
    3) 相对路径./不要省略,可以省略后缀名
 
    既然是模块作用域,如何让模块与模块之间进行通信?
+
+4、在Node中使用模板引擎
+   1) 下载,在Terminal中进入day2目录下,执行npm install art-template命令,会自动下载并放入node-modules目录
