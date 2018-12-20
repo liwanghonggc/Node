@@ -29,3 +29,31 @@
 5、模块原理
    导出多个成员 exports.xxx = xxx
    导出单个成员 module.exports = xxx
+
+6、npm
+   1) 常用命令
+      npm init -y               可以快速跳过向导,快速生成package.json文件
+      npm install               一次性把dependencies选项中的依赖全部安装
+      npm install 包名          只下载
+      npm install --save 包名   下载并保存依赖
+      npm uninstall 包名        只删除,依赖项会保存
+      npm uninstall --save 包名 删除且删除依赖信息
+
+7、package.json
+   我们建议每一个项目都要有一个package.json文件(包描述文件),可以使用npm init来生成该文件,格式如下
+   {
+     "name": "npm-demo",
+     "version": "0.0.1",
+     "description": "这是一个测试项目",
+     "main": "main.js",
+     "scripts": {
+       "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "author": "lipengzhou",
+     "license": "ISC",
+     "dependencies": {
+       "art-template": "^4.12.2",
+       "jquery": "^3.2.1"
+     }
+   }
+
