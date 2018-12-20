@@ -25,3 +25,7 @@
 
 4、在Node中使用模板引擎
    1) 下载,在Terminal中进入day2目录下,执行npm install art-template命令,会自动下载并放入node-modules目录
+
+5、模块原理
+   导出多个成员 exports.xxx = xxx
+   导出单个成员 module.exports = xxx
