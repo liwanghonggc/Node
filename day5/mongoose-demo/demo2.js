@@ -38,20 +38,20 @@ var User = mongoose.model('User', userSchema);
 // **********************
 // #region /新增数据
 // **********************
-// var admin = new User({
-//   username: 'zs',
-//   password: '123456',
-//   email: 'admin@admin.com'
-// })
+var admin = new User({
+  username: 'zs',
+  password: '123456',
+  email: 'admin@admin.com'
+});
 
-// admin.save(function (err, ret) {
-//   if (err) {
-//     console.log('保存失败')
-//   } else {
-//     console.log('保存成功')
-//     console.log(ret)
-//   }
-// })
+admin.save(function (err, ret) {
+  if (err) {
+    console.log('保存失败');
+  } else {
+    console.log('保存成功');
+    console.log(ret);
+  }
+});
 // **********************
 // #endregion /新增数据
 // **********************
