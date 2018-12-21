@@ -116,3 +116,13 @@
       由于要用到bootstrap,安装一下npm i -S bootstrap
 
    2) 路由设计
+
+15、MongoDB
+   1) 安装并配置环境变量
+
+   2) 启动
+      在控制台输入mongod,默认在执行该命令的磁盘根目录下的/data/db(需要自己建立)存储数据
+      如果想要修改目录,mongod --dbpath=数据存储目录
+
+   3) 停止
+      控制台Ctrl + C
