@@ -107,6 +107,7 @@
    3) 获取
       var comment = req.body;
 
+
       获取get数据直接req.query就行了
 
 
