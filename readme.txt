@@ -107,7 +107,12 @@
    3) 获取
       var comment = req.body;
 
-
       获取get数据直接req.query就行了
 
+14、使用Express进行CRUD操作
+   1) 上来建好目录先
+      npm init -y
+      npm i -S express
+      由于要用到bootstrap,安装一下npm i -S bootstrap
 
+   2) 路由设计
