@@ -126,3 +126,16 @@
 
    3) 停止
       控制台Ctrl + C
+
+   4) 连接数据库
+      mongo
+
+   5) 退出数据库
+      exit
+
+   6) 基本命令
+      6.1) show dbs       查看数据库
+      6.2) use 数据库名    切换到指定数据库名
+
+16、在Node中如何操作MongoDB数据库
+    看monggoose-demo中的demo1.js
