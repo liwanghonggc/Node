@@ -96,4 +96,17 @@
         });
       });
 
+13、在Express中获取表单POST请求体数据
+   在Express中没有内置获取表单POST请求体的API,这里需要使用一个第三方包body-parser
+   1) 安装
+      npm install --save body-parser
+   2) 配置
+      var bodyParser = require('body-parser');
+      app.use(bodyParser.urlencoded({ extended: false }));
+      app.use(bodyParser.json());
+   3) 获取
+      var comment = req.body;
+
+      获取get数据直接req.query就行了
+
 
