@@ -1,5 +1,7 @@
 var express = require('express');
 var fs = require('fs');
+var router = require('./router');
+var bodyParser = require('body-parser');
 
 var app = express();
 
@@ -10,18 +12,11 @@ app.use('/node_modules/', express.static('./node_modules/'));
 //配置使用art-template模板引擎
 app.engine('html', require('express-art-template'));
 
-app.get('/', function (req, res) {
-    fs.readFile('./db.json', 'utf-8', function (err, data) {
-        if(err){
-            return res.status(500).send('Server error!');
-        }
-        res.render('index.html', {
-            //从文件中读取的是字符串,这里要转成对象
-            students : JSON.parse(data).students
-        });
-    });
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-});
+//将路由容器挂载到app服务中
+app.use(router);
 
 app.listen(3000, function () {
     console.log('running');
