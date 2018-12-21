@@ -39,6 +39,10 @@
       npm uninstall 包名        只删除,依赖项会保存
       npm uninstall --save 包名 删除且删除依赖信息
 
+   2) 解决npm被墙或者速度慢问题
+      安装淘宝的cnpm, npm install --global cnpm
+      接下来安装包的时候将之前的npm换成cnpm,如cnpm install jquery
+
 7、package.json
    我们建议每一个项目都要有一个package.json文件(包描述文件),可以使用npm init来生成该文件,格式如下
    {
@@ -56,4 +60,10 @@
        "jquery": "^3.2.1"
      }
    }
+
+8、Express的Demo
+   1) 创建目录mkdir express-demo
+   2) 生成package.json文件npm init -y
+   3) 安装express,npm i -S express
+
 
