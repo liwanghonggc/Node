@@ -76,4 +76,24 @@
     2) 安装完毕之后,使用
        nodemon app.js
 
+11、静态服务
+    看express-demo中的app.js
+
+12、在Express中配置使用art-template模板引擎
+   1) 安装
+      npm install --save art-template
+      npm install --save express-art-template
+
+   2) 配置
+      var app = express();
+      app.engine('html', require('express-art-template'))
+
+   3) 使用
+      app.get('/', function(req, res){
+        //默认会去项目中的views目录查找index.html
+        res.render('index.html', {
+            title : 'Hello World'
+        });
+      });
+
 
