@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'root',
-  database: 'users' // 对不起，我一不小心把数据库名字和表名起成一样的，你知道就行
+  database: 'users' // 对不起,我一不小心把数据库名字和表名起成一样的,你知道就行
 });
 
 // 2. 连接数据库 打开冰箱门
@@ -24,3 +24,4 @@ connection.query('SELECT * FROM `users`', function (error, results, fields) {
 
 // 4. 关闭连接 关闭冰箱门
 connection.end();
+
