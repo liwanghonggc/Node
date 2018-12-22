@@ -24,4 +24,3 @@ connection.query('SELECT * FROM `users`', function (error, results, fields) {
 
 // 4. 关闭连接 关闭冰箱门
 connection.end();
-
