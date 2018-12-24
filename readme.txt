@@ -145,3 +145,8 @@
     path.extname
     path.dirname
     path.parse()  --> 以上几个方法的综合
+
+18、Node中的非模块成员
+    在每个模块中,除了require、exports等模块相关的API之外,还有两个特殊的成员
+    1)_dirname可以用来获取当前文件模块所属目录的绝对路径,不带文件名
+    2)_filename可以用来获取当前文件的绝对路径,带文件名
