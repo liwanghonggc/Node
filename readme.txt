@@ -139,3 +139,9 @@
 
 16、在Node中如何操作MongoDB数据库
     看monggoose-demo中的demo1.js
+
+17、path路径操作模块
+    path.basename
+    path.extname
+    path.dirname
+    path.parse()  --> 以上几个方法的综合
